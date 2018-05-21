@@ -1,0 +1,18 @@
+{
+	"status": "ok",
+	"data": {
+		"series": [{
+			"name": "作业风险",
+			"type": "pie",
+			"radius" : "55%",
+			"center": ["50%", "60%"],
+			"data": [
+				{"value":0, "name":"1级"},
+				{"value":1, "name":"2级"},
+				{"value":2, "name":"3级"},
+				{"value":3, "name":"4级"},
+				{"value":5, "name":"5级"}
+			]
+		}]
+	}
+}

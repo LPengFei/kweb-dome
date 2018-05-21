@@ -1,0 +1,9 @@
+#添加人员姓名字段
+ALTER TABLE `yw`.`y_ylog` ADD COLUMN `user_name` VARCHAR(255) NULL COMMENT '人员姓名' AFTER user_id;
+#添加所属地市字段
+ALTER TABLE `yw`.`y_ylog` ADD COLUMN `city` VARCHAR(255) NULL COMMENT '所属地市' AFTER project_id;
+ALTER TABLE `yw`.`y_project` ADD COLUMN `city` VARCHAR(255) NULL COMMENT '所属地市' ;
+#更新日志人员名称数据
+UPDATE `y_ylog` a SET a.user_name=(SELECT uname FROM k_user b WHERE a.user_id=b.`id`);
+#更新日志所属地市字段数据
+UPDATE `y_ylog` a SET a.city=(SELECT city FROM y_project b WHERE a.project_id=b.`id`);

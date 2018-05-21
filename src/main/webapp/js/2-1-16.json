@@ -1,0 +1,21 @@
+{
+	"status": "ok",
+	"data": {
+		"series": [{
+			"name": "电网风险",
+			"type": "pie",
+			"radius" : "55%",
+			"center": ["50%", "60%"],
+			"data":[
+				{"value":0, "name":"一级"},
+				{"value":1, "name":"二级"},
+				{"value":2, "name":"三级"},
+				{"value":3, "name":"四级"},
+				{"value":5, "name":"五级"},
+				{"value":5, "name":"六级"},
+				{"value":5, "name":"七级"},
+				{"value":5, "name":"八级"}
+			]
+		}]
+	}
+}

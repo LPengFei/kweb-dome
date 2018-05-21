@@ -1,0 +1,18 @@
+{
+	"status": "ok",
+	"data": {
+		"title": " ",
+		"type": "combinations",
+		"data": [],
+		"series": [{
+			"name": "严重违章",
+			"data": [3, 4, 3, 4, 3, 3, 4, 3, 2, 3]
+
+		}, {
+			"name": "一般违章",
+			"data": [6, 8, 5, 6, 7, 4, 8, 5, 7, 5]
+
+		}],
+		"drilldownSeries": []
+	}
+}

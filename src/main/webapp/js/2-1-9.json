@@ -1,0 +1,17 @@
+{
+	"status": "ok",
+	"data": {
+		"series": [{
+			"name": "按违章性质分类",
+			"type": "pie",
+			"radius" : "55%",
+			"center": ["50%", "60%"],
+			"data":[
+				{"value":34, "name":"一般违章"},
+				{"value":21, "name":"严重违章"},
+				{"value":2, "name":"红线禁令"}
+
+			]
+		}]
+	}
+}

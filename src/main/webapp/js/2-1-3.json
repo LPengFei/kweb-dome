@@ -1,0 +1,16 @@
+{
+	"status": "ok",
+	"data": {
+		"title": " ",
+		"type": "combinations",
+		"data": [],
+		"series": [{
+          "name": "领导（正）",
+          "data": [1, 2, 1, 2, 1, 1, 2,1,1,2]
+        },{
+            "name": "领导（副）",
+            "data": [3, 2, 3, 2, 2, 3, 3, 2, 4, 3]
+          }],
+		"drilldownSeries": []
+	}
+}

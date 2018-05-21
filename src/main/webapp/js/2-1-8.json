@@ -1,0 +1,20 @@
+{
+	"status": "ok",
+	"data": {
+		"series": [{
+			"type":"pie",
+			"name": "预警等级",
+			"data": [
+				{"value": 0, "name": "一级"},
+				{"value": 0, "name": "二级"},
+				{"value": 0, "name": "三级"},
+				{"value": 0, "name": "四级"},
+				{"value": 1, "name": "五级"},
+				{"value": 2, "name": "六级"},
+				{"value": 4, "name": "七级"},
+				{"value": 2, "name": "八级"}
+			]
+		}],
+		"drilldownSeries": []
+	}
+}

@@ -1,0 +1,15 @@
+{
+	"status": "ok",
+	"data": {
+		"title": " ",
+		"type": "combinations",
+		"data": [],
+		"series": [{
+          "name": "计划个数",
+          "data": [
+			  {"color":"#228B22","y":11},
+			  {"color":"#4488BB","y":12},
+			  {"color":"#FF4500","y":13}]
+        }]
+	}
+}

@@ -1,0 +1,186 @@
+@font-face {
+  font-family: 'ksi-icon';
+  src:  url('fonts/ksi-icon.eot?6e310p');
+  src:  url('fonts/ksi-icon.eot?6e310p#iefix') format('embedded-opentype'),
+    url('fonts/ksi-icon.ttf?6e310p') format('truetype'),
+    url('fonts/ksi-icon.woff?6e310p') format('woff'),
+    url('fonts/ksi-icon.svg?6e310p#ksi-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="ksi-"], [class*=" ksi-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'ksi-icon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ksi-icon-accident-investigation:before {
+  content: "\e900";
+}
+.ksi-icon-accident-investigation-hover:before {
+  content: "\e901";
+}
+.ksi-icon-arrow-left:before {
+  content: "\e902";
+}
+.ksi-icon-arrow-right:before {
+  content: "\e903";
+}
+.ksi-icon-balance-meet:before {
+  content: "\e904";
+}
+.ksi-icon-download-center:before {
+  content: "\e905";
+}
+.ksi-icon-download-center-hover:before {
+  content: "\e906";
+}
+.ksi-icon-home:before {
+  content: "\e907";
+}
+.ksi-icon-illegal-file:before {
+  content: "\e908";
+}
+.ksi-icon-ip .path1:before {
+  content: "\e909";
+  color: rgb(135, 197, 10);
+}
+.ksi-icon-ip .path2:before {
+  content: "\e90a";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.ksi-icon-lately-login .path1:before {
+  content: "\e90b";
+  color: rgb(246, 171, 65);
+}
+.ksi-icon-lately-login .path2:before {
+  content: "\e90c";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.ksi-icon-logout:before {
+  content: "\e90d";
+}
+.ksi-icon-modify-password .path1:before {
+  content: "\e90e";
+  color: rgb(9, 176, 246);
+}
+.ksi-icon-modify-password .path2:before {
+  content: "\e90f";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.ksi-icon-operational-risk .path1:before {
+  content: "\e910";
+  color: rgb(9, 176, 246);
+}
+.ksi-icon-operational-risk .path2:before {
+  content: "\e911";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.ksi-icon-patrol-briefing:before {
+  content: "\e912";
+}
+.ksi-icon-person:before {
+  content: "\e913";
+}
+.ksi-icon-person-center .path1:before {
+  content: "\e914";
+  color: rgb(201, 130, 250);
+}
+.ksi-icon-person-center .path2:before {
+  content: "\e915";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.ksi-icon-plan:before {
+  content: "\e916";
+}
+.ksi-icon-plan-examine:before {
+  content: "\e917";
+}
+.ksi-icon-plan-management:before {
+  content: "\e918";
+}
+.ksi-icon-plan-management-hover:before {
+  content: "\e919";
+}
+.ksi-icon-plan-report:before {
+  content: "\e91a";
+}
+.ksi-icon-power-grid-risk .path1:before {
+  content: "\e91b";
+  color: rgb(254, 173, 108);
+}
+.ksi-icon-power-grid-risk .path2:before {
+  content: "\e91c";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.ksi-icon-problem-feedback:before {
+  content: "\e91d";
+}
+.ksi-icon-repeat-trip .path1:before {
+  content: "\e91e";
+  color: rgb(21, 202, 181);
+}
+.ksi-icon-repeat-trip .path2:before {
+  content: "\e91f";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.ksi-icon-report-reminder:before {
+  content: "\e920";
+}
+.ksi-icon-report-reminder-red:before {
+  content: "\e921";
+}
+.ksi-icon-risk:before {
+  content: "\e922";
+}
+.ksi-icon-risk-hover:before {
+  content: "\e923";
+}
+.ksi-icon-special-supervision:before {
+  content: "\e924";
+}
+.ksi-icon-special-supervision-hover:before {
+  content: "\e925";
+}
+.ksi-icon-statistical:before {
+  content: "\e926";
+}
+.ksi-icon-statistical-analysis:before {
+  content: "\e927";
+}
+.ksi-icon-statistical-analysis-hover:before {
+  content: "\e928";
+}
+.ksi-icon-survey:before {
+  content: "\e929";
+}
+.ksi-icon-system-configuration:before {
+  content: "\e92a";
+}
+.ksi-icon-system-configuration-hover:before {
+  content: "\e92b";
+}
+.ksi-icon-tools:before {
+  content: "\e92c";
+}
+.ksi-icon-video:before {
+  content: "\e92d";
+}
+

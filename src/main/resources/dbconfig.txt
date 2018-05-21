@@ -1,0 +1,27 @@
+db.driverClass=com.mysql.jdbc.Driver
+
+
+#db.jdbcUrl = jdbc:mysql://mysql.cnksi.com/ess_v4?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useInformationSchema=true&remarks=true
+#db.user = root
+#db.password = cnksi.com
+
+db.jdbcUrl = ${jdbc.url}?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useInformationSchema=true&remarks=true
+db.user = ${jdbc.user}
+db.password =${jdbc.pwd}
+db.showSql=${jdbc.showSql}
+
+db.initialSize=2
+db.maxActive=3
+db.minIdle=1
+
+#是否开启KRequiresPermissions权限过滤
+shiro.open=false
+
+devMode = ${devMode}
+
+appid = app 
+
+baseUploadPath=${upload_folder}
+lscc_server_login=${lscc_server}
+#上传文件白名单
+upload.file.whitelist=png,bmp,gif, jpg, jpeg, pdf, doc, docx, xls, xlsx, txt, ppt, pptx, zip, rar,ico, xml, mp4, mp3

@@ -1,0 +1,519 @@
+.clearfix:after{
+    clear: both;
+}
+ul,ol{list-style:none;}
+body{
+    font-family: "微软雅黑";
+}
+/*基本信息栏目 start*/
+.page_content{
+    background: #eceff2;
+    padding-right: 20px;
+    padding-left: 41px;
+    min-width: 400px;
+    padding-bottom: 20px;
+}
+.person_info{
+    margin-top: 19px;
+    border-radius: 6px;
+    padding: 28px 30px 21px 14px;
+    background: #ffffff;
+}
+.subtitle{
+    font-size: 20px;
+    font-weight: 400;
+    color: #15cab5;
+    margin-left: 7px;
+    margin-top: 0;
+}
+.person_content{
+    display: flex;
+    align-items: center;
+}
+.person_content .person_headImg{
+    position: relative;
+    width: 98px;
+    height: 98px;
+    float: left;
+}
+.person_content .person_headImg img{
+    width: 100px;
+    height: 100px;
+}
+.person_content .person_headImg span{
+    position: absolute;
+    bottom: -6px;
+    left: 16px;
+    padding: 4px 10px 3px;
+    background: #ee6d63;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 14px;
+}
+/*.person_detail{*/
+    /*float: left;*/
+    /*margin-left: 30px;*/
+    /*width: 90%;*/
+/*}*/
+.person_detail{
+    margin-left: 30px;
+    flex: 1;
+}
+.person_detail ul{
+    border-top: 1px dashed #dbdfde;
+    padding: 10px 0 5px;
+}
+.person_detail ul:first-child{
+    border-top: none;
+}
+
+
+/*.person_detail ul li{*/
+    /*float: left;*/
+    /*min-width: 178px;*/
+    /*width: 15%;*/
+    /*margin-bottom: 5px;*/
+    /*margin-right: 20px;*/
+/*}*/
+.person_detail ul li label{
+    color: #979e9d;
+    font-size: 14px;
+    font-weight: 400;
+}
+.person_detail ul li span{
+    padding-left: 16px;
+    font-size: 14px;
+    color: #565656;
+}
+
+.person_detail ul{
+    display: flex;
+    flex-wrap: wrap;
+    align-content:center;
+}
+.person_detail ul li{
+    width: 170px;
+    margin-bottom: 10px;
+    margin-right: 50px;
+}
+
+.person_detail ul li:nth-child(2){
+    width: 190px;
+}
+.person_detail ul li:nth-child(3){
+    width: 190px;
+}
+.person_detail ul li:nth-child(4){
+    width: 250px;
+}
+
+@media (max-width:1600px){
+    .person_content{
+        display: block;
+    }
+    .person_headImg{
+        margin: 0 auto;
+        float: none !important;
+        margin-bottom: 20px;
+    }
+    .person_detail ul li{
+        margin-right: 30px;
+    }
+}
+/*基本信息栏目 end*/
+
+/*证书列表栏目 start*/
+.credential_list{
+    margin-top: 19px;
+    padding: 75px 15px 30px 20px;
+    border-radius: 6px;
+    background: #ffffff;
+}
+.credential_list ul li{
+    position: relative;
+    display: inline-block;
+    height: 246px;
+    width: 563px;
+    border: 1px solid #d2d4d6;
+    padding: 19px 0 19px 19px;
+    margin-right: 20px;
+    float: left;
+}
+
+.credential_list_box{
+    position: relative;
+    width: 96%;
+    height: 246px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.credential_list ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+.credential_list ul li img{
+    float: left;
+}
+.credential_list ul li .credential_date{
+    position: absolute;
+    right: -1px;
+    top: -1px;
+    width: 104px;
+    height: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 20px;
+    font-size: 14px;
+}
+.credential_list ul li .credential_introduce{
+    float: left;
+    max-width: 260px;
+    margin-top: 17px;
+    margin-left: 32px;
+}
+.credential_list ul li .credential_introduce h3{
+    color: #ee6d63;
+    font-size: 18px;
+    margin: 0 0 18px 0;
+}
+
+.credential_list ul li .credential_introduce label{
+    color: #738381;
+    font-size: 14px;
+    font-weight: 400;
+}
+.credential_list ul li .credential_introduce span{
+    padding-left: 12px;
+    color: #565656;
+    font-size: 14px;
+}
+
+@media (max-width:1880px){
+    .credential_list ul li .credential_introduce{
+        margin-left: 12px;
+        width: 60%;
+    }
+}
+@media (max-width: 1650px) {
+    .credential_list ul li .credential_introduce{
+        width: 53%;
+    }
+}
+.credential_list .arrow_right{
+    right: 0;
+}
+.credential_list .arrow_left{
+    left: 0;
+}
+.credential_arrow{
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    margin-top: -25px;
+    width: 50px !important;
+    height: 50px;
+    background: rgba(21,202,181,0.46);
+    text-align: center;
+    line-height: 50px;
+    font-size: 40px;
+    color: #ffffff;
+    z-index: 2;
+    cursor: pointer;
+}
+/*证书列表栏目 end*/
+
+/*资质栏目 start*/
+.aptitude_section{
+    margin-top: 20px;
+    padding: 30px 32px 30px 20px;
+    background: #ffffff;
+    border-radius: 6px;
+}
+.aptitude_section .subtitle{
+    margin-bottom: 23px;
+}
+.aptitude_section .subtitle a{
+    font-size: 14px;
+    color: #ffffff;
+    background: #15cab5;
+    padding: 8px 17px;
+    border-radius: 3px;
+    float: right;
+}
+.aptitude_section ul li{
+    padding: 0 10px;
+}
+.aptitude_section ul li:first-child{
+    padding: 0;
+}
+.aptitude_section ul li:first-child+li{
+    padding-right: 0;
+}
+.aptitude_section ul li .aptitude_detail{
+    border: 1px solid #d2d4d6;
+    padding: 16px 5px 18px 19px;
+}
+.aptitude_section ul li .aptitude_detail>div{
+    overflow: auto;
+    height: 69px;
+}
+.aptitude_section ul li .aptitude_detail h2{
+    color: #ee6d63;
+    font-weight: 400;
+    margin: 0 0 22px;
+    font-size: 18px;
+}
+
+
+.aptitude_section ul li .aptitude_detail i{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    color: #ffffff;
+    line-height: 20px;
+    text-align: center;
+    background-color: #8bcf03;
+    font-style: normal;
+    margin-right: 8px;
+}
+.aptitude_section ul li .aptitude_detail span{
+    display: inline-block;
+    width: 250px;
+    color: #565656;
+    font-size: 14px;
+    margin-bottom: 3px;
+    line-height: 20px;
+}
+.aptitude_section ul li .aptitude_detail>div .no_data{
+    color: rgb(198,198,198);
+    font-size: 20px;
+    text-align: center;
+    height: 69px;
+    line-height: 69px;
+    margin-bottom: 0;
+}
+@media (max-width: 991px) {
+    .aptitude_section ul li{
+        padding: 0;
+        margin-bottom: 10px;
+    }
+}
+/*资质栏目 end*/
+
+/*工作信息栏目 start*/
+.workInfo_section{
+    padding: 0;
+    margin-top: 20px;
+}
+.workInfo_section .subtitle{
+    margin-bottom: 28px;
+}
+.workInfo_section .col-md-6{
+    padding: 0 10px;
+}
+.workInfo_section .col-md-6:first-child{
+    padding: 0;
+}
+.workInfo_section .col-md-6:first-child+.col-md-6{
+    padding-right: 0;
+}
+.workInfo_section  .workInfo_detail{
+    background-color: #ffffff;
+    border-radius: 6px;
+    padding: 30px 32px 15px 31px;
+}
+.workInfo_section  .workInfo_detail ul{
+    margin: 0 0 0 15px;
+    padding: 0;
+    height: 140px;
+    overflow: auto;
+}
+.workInfo_section  .workInfo_detail ul .no_data{
+    color: rgb(198,198,198);
+    font-size: 25px;
+    text-align: center;
+    height: 140px;
+    line-height: 140px;
+    margin-bottom: 0;
+}
+.workInfo_section  .workInfo_detail ul li{
+    position: relative;
+    border-top: 1px dashed #dbdfde;
+    padding: 13px 0 13px 10px;
+}
+.workInfo_section  .workInfo_detail ul li:first-child{
+    border-top: none;
+}
+.circle{
+    position: relative;
+    top: 4px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 1px solid #22cdb9;
+    margin-right: 8px;
+    float: left;
+}
+.workInfo_section  .workInfo_detail .workInfo_detail_info{
+    color: #738381;
+    font-size: 14px;
+}
+.workInfo_section  .workInfo_detail .workInfo_detail_info .time{
+    width: 140px;
+}
+@media (max-width: 991px) {
+    .workInfo_section .col-md-6{
+        padding: 0;
+        margin-bottom: 10px;
+    }
+}
+/*工作信息栏目 end*/
+
+/*荣誉栏目 start*/
+.honors_section{
+    background-color: #ffffff;
+    padding: 30px 29px 29px 30px;
+    border-radius: 6px;
+    margin-top: 20px;
+    min-height: 312px;
+}
+.honors_section .subtitle{
+    margin-bottom: 25px;
+}
+.honors_section .no_data{
+    height: 186px;
+    line-height: 186px;
+    text-align: center;
+    color: rgb(198,198,198);
+    font-size: 25px;
+    margin-bottom: 0;
+}
+.honors_section table thead th{
+    background-color: #dbf1ed;
+    color: #03b9a0;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+}
+.honors_section table tbody td{
+    vertical-align: middle;
+    text-align: center;
+    font-size: 14px;
+    color: #8a9795;
+}
+/*荣誉栏目 end*/
+
+/*违章信息 start*/
+i.badge_success,i.badge_normal,i.badge_info,i.badge_danger{
+    font-style: normal;
+}
+i.badge_success{
+    background-color: #00c8d1;
+}
+i.badge_normal{
+    background-color: #ffc000;
+}
+i.badge_info{
+    background-color: #ff9147;
+}
+i.badge_danger{
+    background-color: #ee6d63;
+}
+.breakRules_section{
+    padding: 30px 33px 19px 31px;
+    background-color: #ffffff;
+    border-radius: 6px;
+    margin-top: 20px;
+    min-height: 213px;
+}
+.breakRules_section .no_data{
+    color: rgb(198,198,198);
+    font-size: 25px;
+    text-align: center;
+    height: 122px;
+    line-height: 122px;
+    margin-bottom: 0;
+}
+.breakRules_section ul{
+    padding: 0;
+    margin-left: 9px;
+}
+.breakRules_section ul li{
+    border-top: 1px dashed #dbdfde;
+    padding: 13px 0 13px 16px;
+    display: flex;
+    align-items: flex-start;
+}
+.breakRules_section ul li:first-child{
+    border-top: none;
+}
+.breakRules_section ul li i{
+    color: #ffffff;
+    font-size: 14px;
+    height: 20px;
+    line-height: 20px;
+    width: 71px;
+    text-align: center;
+    margin-right: 26px;
+}
+.breakRules_section ul li span{
+    line-height: 20px;
+    flex: 1;
+}
+/*违章信息 end*/
+
+/*教育信息 start*/
+.education_section{
+    position: relative;
+    padding: 30px 33px 12px 20px;
+    background: #ffffff;
+    border-radius: 6px;
+    margin-top: 20px;
+    min-height: 206px;
+    margin-bottom: 20px;
+}
+.education-section .subtitle{
+    margin-bottom: 16px;
+}
+.education_detail{
+    float: left;
+    font-size: 14px;
+    color: #738381;
+}
+.education_section .no_data{
+    height: 122px;
+    line-height: 122px;
+    text-align: center;
+    color: rgb(198,198,198);
+    font-size: 25px;
+    margin-bottom: 0;
+}
+.education_section ul{
+    padding-left: 11px;
+}
+.education_section ul li{
+    border-top: 1px dashed #dbdfde;
+    padding: 13px 0 13px 15px;
+}
+.education_section ul li:first-child{
+    border-top: none;
+}
+.education_detail .education_detail_time{
+    margin-right: 17px;
+}
+.education_detail .education_detail_time:nth-child(2){
+    margin: 0;
+    margin-left: 17px;
+}
+.education_detail .education_detail_subject, .education_detail .result{
+    margin-left: 60px;
+}
+.education_detail .result .num{
+    font-style: normal;
+    color: #ee6d63;
+}
+/*教育信息 end*/

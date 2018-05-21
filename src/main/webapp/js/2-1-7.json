@@ -1,0 +1,14 @@
+{
+	"status": "ok",
+	"data": {
+		"title": " ",
+		"type": "combinations",
+		"data": [],
+		"series": [{
+			"name": "预警级别",
+			"data": [2, 4, 2, 1, 0, 0, 0,0]
+
+		}],
+		"drilldownSeries": []
+	}
+}

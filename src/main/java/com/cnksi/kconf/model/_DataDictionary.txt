@@ -1,0 +1,14 @@
+Table: k_menu
+------------------+--------------+------+-----+-------------------+---------
+ Field            | Type         | Null | Key | Default           | Remarks 
+------------------+--------------+------+-----+-------------------+---------
+ menuid           | VARCHAR(100) | NO   | PRI |                   | 菜单ID    
+ mname            | VARCHAR(100) | YES  |     |                   | 菜单名称    
+ murl             | VARCHAR(100) | YES  |     |                   | 菜单地址    
+ pmenuid          | VARCHAR(100) | YES  |     |                   | 父级菜单    
+ enabled          | INT(10)      | YES  |     | 0                 | 是否可用    
+ last_modify_time | DATETIME(19) | YES  |     | CURRENT_TIMESTAMP | 最后修改时间  
+ create_time      | DATETIME(19) | YES  |     | CURRENT_TIMESTAMP | 创建时间    
+ ord              | INT(10)      | YES  |     | 0                 | 排序      
+------------------+--------------+------+-----+-------------------+---------
+

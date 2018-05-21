@@ -1,0 +1,940 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<!-- <title>国网乐山公司作业信息概览</title> -->
+	<title>安全风险管控平台</title>
+	<style type="text/css">
+		html {
+			height: 100%
+		}
+
+		body {
+			height: 100%;
+			margin: 0px;
+			padding: 0px
+		}
+
+		#container {
+			height: 100%
+		}
+	</style>
+	<link rel="stylesheet" href="./css/map.css"/>
+<!-- 	<link href="${ctx }/resources/styles/mapview.css" rel="stylesheet" type="text/css" media="screen"/> -->
+
+	<script type="text/javascript">
+		//cnksi.mapserver.url是地图服务器的地址，并且以“/”结尾
+		cnksi={
+			mapserver:{
+				url:'http://211.149.156.228:8080/map2/'
+			}
+		};
+
+
+	</script>
+	<!-- <script type="text/javascript" src="http://211.149.156.228:8080/map2/js/baidu.js"></script> -->
+	<!-- <script type="text/javascript" src="http://localhost:8888/map/js/baidu.js"></script> -->
+	<script type="text/javascript" src="./js/data-area-points.js"></script>
+
+</head>
+
+<body class="cnksi_body_bg">
+<div class="cnksi_index">
+
+	<div class="cnksi_top">
+		<div class="cnksi_header">
+			<div class="cnksi_bg">
+				<div class="bg_left"></div>
+				<div class="bg_right"></div>
+			</div>
+			<div class="cnksi_titleImg">
+				<img src="./image/title.png" alt="国家电网"/>
+			</div>
+			<div class="cnksi_headImg">
+				<img src="./image/head_title.png"/>
+			</div>
+			
+			<div class="login">
+				<a href="/login">
+					<img src="./image/icon_user.png"/>
+					<span>登录</span>
+				</a>
+			</div>
+		</div>
+	</div>
+	<!--cnksi_top -->
+	<div class="cnksi_index_bg">
+		<div class="cnksi_index_col">
+
+			<div class="cnksi_col_left">
+				<div class="cnksi_col_left_count">
+					<div class="wire"></div>
+					<div class="list_light"></div>
+					<div class="cnksi_count_classify">
+						<span class="current">今日</span>
+						<span>本周</span>
+					</div>
+					<div class="cnksi_count_box">
+						<div class="cnksi_count_box_detail cnksi_count_box_date active">
+							<ul>
+								<li>
+									<div class="line"></div>
+									<h4>今日作业现场作业总数：82</h4>
+									<div class="count_detail">
+										<div class="count_detail_item">
+											<h5>运检</h5>
+											<p>56</p>
+										</div>
+										<div class="count_detail_item">
+											<h5>基建</h5>
+											<p>10</p>
+										</div>
+										<div class="count_detail_item">
+											<h5>农网</h5>
+											<p>13</p>
+										</div>
+										<div class="count_detail_item">
+											<h5>其他</h5>
+											<p>3</p>
+										</div>
+									</div>
+								</li>
+
+								<li>
+									<div class="line"></div>
+									<h4>今日电网风险预警分布</h4>
+									<div class="count_detail">
+										<div class="count_detail_item">
+											<h5>8-7级</h5>
+											<p>0</p>
+										</div>
+										<div class="count_detail_item">
+											<h5>6级</h5>
+											<p>0</p>
+										</div>
+										<div class="count_detail_item">
+											<h5>5级</h5>
+											<p>6</p>
+										</div>
+										<div class="count_detail_item">
+											<h5>4-1级</h5>
+											<p>9</p>
+										</div>
+									</div>
+								</li>
+
+								<li>
+									<div class="line"></div>
+									<h4>今日作业风险预警分布</h4>
+									<div class="count_detail">
+										<div class="count_detail_item">
+											<h5>5-4级</h5>
+											<p>0</p>
+										</div>
+										<div class="count_detail_item">
+											<h5>3级</h5>
+											<p>5</p>
+										</div>
+										<div class="count_detail_item">
+											<h5>2级</h5>
+											<p>3</p>
+										</div>
+										<div class="count_detail_item">
+											<h5>1级</h5>
+											<p>10</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+
+						<div class="cnksi_count_box_detail cnksi_count_box_week">
+							<ul>
+								<li>
+									<div class="line"></div>
+									<h4>本周作业现场作业总数：279</h4>
+									<div class="count_detail">
+										<div class="count_detail_item">
+											<h5>运检</h5>
+											<p>82</p>
+										</div>
+										<div class="count_detail_item">
+											<h5>基建</h5>
+											<p>28</p>
+										</div>
+										<div class="count_detail_item">
+											<h5>农网</h5>
+											<p>68</p>
+										</div>
+										<div class="count_detail_item">
+											<h5>其他</h5>
+											<p>21</p>
+										</div>
+									</div>
+								</li>
+
+								<li>
+									<div class="line"></div>
+									<h4>本周电网风险预警分布</h4>
+									<div class="count_detail">
+										<div class="count_detail_item">
+											<h5>8-7级</h5>
+											<p>10</p>
+										</div>
+										<div class="count_detail_item">
+											<h5>6级</h5>
+											<p>18</p>
+										</div>
+										<div class="count_detail_item">
+											<h5>5级</h5>
+											<p>36</p>
+										</div>
+										<div class="count_detail_item">
+											<h5>4-1级</h5>
+											<p>19</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="line"></div>
+									<h4>本周作业风险预警分布</h4>
+									<div class="count_detail">
+										<div class="count_detail_item">
+											<h5>5-4级</h5>
+											<p>12</p>
+											
+										</div>
+										<div class="count_detail_item">
+											<h5>3级</h5>
+											<p>15</p>
+										</div>
+										<div class="count_detail_item">
+											<h5>2级</h5>
+											<p>7</p>
+										</div>
+										<div class="count_detail_item">
+											<h5>1级</h5>
+											<p>12</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="cnksi_col_left_info">
+					<ul>
+						<li>
+							<div class="line"></div>
+							<img src="./image/info_1.png" alt=""/>
+							<p>巡查情况</p>
+						</li>
+						<li>
+							<div class="line"></div>
+							<img src="./image/info_2.png" alt=""/>
+							<p>违章情况</p>
+						</li>
+						<li>
+							<div class="line"></div>
+							<img src="./image/info_3.png" alt=""/>
+							<p>到岗到位</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="cnksi_col_right">
+				<div class="cnksi_index_left" style="width: 100%;">
+					<!-- 地图容器 -->
+					<div id="container" class="cnksi_index_container" style="width:100%;height:100%;border:1px solid gray;position:absolute;z-index: 1000;"></div>
+					<div class="cnksi_li_explain">
+						<!-- 颜色及图标标识 -->
+						<div class="cnksi_explain_detail">
+							<div class="line"></div>
+							<ul>
+								<li style="padding: 0; width: 88px; text-align: center;" >电网风险：</li>
+								<li class="level-bg-eight">8-7级</li>
+								<li class="level-bg-six">6级</li>
+								<li class="level-bg-five">5级</li>
+								<li class="level-bg-one">4-1级</li>
+							</ul>
+						</div>
+
+						<div class="cnksi_explain_detail">
+							<div class="line"></div>
+							<ul>
+								<li style="padding: 0; width: 88px; text-align: center;" >作业风险：</li>
+								<li class="level-bg-eight">5-4级</li>
+								<li class="level-bg-six">3级</li>
+								<li class="level-bg-five">2级</li>
+								<li class="level-bg-one">1级</li>
+							</ul>
+						</div>
+					</div>
+					<!--弹框-->
+					<!--cnksi_explain_detail -->
+					<div class="cnksi_explain_category" style="display: none">
+						<div class="dialog_header"></div>
+						<div class="explain_category_box">
+							<div class="box_close">&times;</div>
+							<h3 class="box_header">
+								<img src="image/box_headerImg.png"/>
+								<span>峨眉山作业情况</span>
+							</h3>
+							<div class="box_content">
+								<div class="box_content_info">
+									<p class="box_content_title">作业情况（44）:</p>
+									<ul>
+										<li>
+											<div class="info_count">4</div>
+											<p>运检作业</p>
+										</li>
+										<li>
+											<div class="info_count">5</div>
+											<p>基建作业</p>
+										</li>
+										<li>
+											<div class="info_count">20</div>
+											<p>农网作业</p>
+										</li>
+										<li>
+											<div class="info_count">15</div>
+											<p>其他</p>
+										</li>
+
+									</ul>
+								</div>
+
+								<div class="box_content_tip">
+									<p class="box_content_title">重要风险提示:</p>
+									<ul>
+										<li>
+											<img src="image/tip_count1.png"/>
+											<span>1、06月03日 电业局高低压设备年检工程</span>
+										</li>
+										<li>
+											<img src="image/tip_count2.png"/>
+											<span>2、06月01日 10KV斑棠线 电业局高低压设备年检工程
+											6月01日 10KV斑棠线 电业局高低压设备年检工程
+											6月01日 10KV斑棠线 电业局高低压设备年检工程</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!--cnksi_explain_category -->
+					<!--cnksi_li_explain -->
+				</div>
+
+				<div class="cnksi_index_right">
+					<div class="right_open">
+						<img src="image/right_open_arrow.png" alt=""/>
+					</div>
+					<div class="line"></div>
+					<div class="cnksi_right_list">
+						<p class="cnksi_right_list_title">作业计划一览表（07-10~07-14）</p>
+						<div>
+							<span class="current">今日</span>
+							<span>本周</span>
+						</div>
+                    </div>
+						<!--cnksi_right_header -->
+						<div class="rigth_list" id="right_list_box">
+							<div class="list_detail right_list_day active">
+								<ul>
+									<li><div class="detail_bg"><span class="company_name">沐川供电公司</span><span class="num">10</span></div></li>
+									<li><div class="detail_bg"><span class="company_name">夹江供电公司</span><span class="num">25</span></div></li>
+									<li><div class="detail_bg"><span class="company_name">井研供电公司</span><span class="num">14</span></div></li>
+									<li><div class="detail_bg"><span class="company_name">马边供电公司</span><span class="num">14</span></div></li>
+									<!--<li><div class="detail_bg"><span class="company_name">峨边供电公司</span><span class="num">21</span></div></li>-->
+									<li><div class="detail_bg"><span class="company_name">沙湾供电公司</span><span class="num">20</span></div></li>
+									<li><div class="detail_bg"><span class="company_name">五通桥供电公司</span><span class="num">7</span></div></li>
+									<li><div class="detail_bg"><span class="company_name">峨眉山供电公司</span><span class="num">9</span></div></li>
+									<!--<li><div class="detail_bg"><span class="company_name">市中区供电公司</span><span class="num">18</span></div></li>-->
+									<!--<li><div class="detail_bg"><span class="company_name">金口河供电公司</span><span class="num">11</span></div></li>-->
+									<!--<li><div class="detail_bg"><span class="company_name">犍为供电公司</span><span class="num">30</span></div></li>-->
+								</ul>
+							</div>
+							<div class="list_detail right_list_week">
+                                <ul>
+									<li><div class="detail_bg"><span class="company_name">沐川供电公司</span><span class="num">10</span></div></li>
+									<li><div class="detail_bg"><span class="company_name">夹江供电公司</span><span class="num">25</span></div></li>
+									<li><div class="detail_bg"><span class="company_name">井研供电公司</span><span class="num">14</span></div></li>
+									<li><div class="detail_bg"><span class="company_name">马边供电公司</span><span class="num">14</span></div></li>
+									<!--<li><div class="detail_bg"><span class="company_name">峨边供电公司</span><span class="num">21</span></div></li>-->
+									<li><div class="detail_bg"><span class="company_name">沙湾供电公司</span><span class="num">20</span></div></li>
+									<li><div class="detail_bg"><span class="company_name">五通桥供电公司</span><span class="num">7</span></div></li>
+									<li><div class="detail_bg"><span class="company_name">峨眉山供电公司</span><span class="num">9</span></div></li>
+									<!--<li><div class="detail_bg"><span class="company_name">市中区供电公司</span><span class="num">18</span></div></li>-->
+									<!--<li><div class="detail_bg"><span class="company_name">金口河供电公司</span><span class="num">11</span></div></li>-->
+									<!--<li><div class="detail_bg"><span class="company_name">犍为供电公司</span><span class="num">30</span></div></li>-->
+								</ul>
+							</div>
+						</div>
+						<!--cnksi_list-->
+					</div>
+					<!--cnksi_right_list -->
+				</div>
+				<div class="cnksi_footer">Power by 四川金信石信息技术有限公司</div>
+			</div>
+		</div>
+	</div>
+
+
+
+<!-- echart demo -->
+<!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+<!--<div id="main" style="height:960px; width:auto;"></div>-->
+
+<script src="./js/esl.js"></script>
+<script src="./js/echarts.js"></script>
+<script src="./js/jquery-1.7.2.min.js"></script>
+<script src="./js/xb_scroll.js"></script>
+<script src="./js/baidu-api.js"></script>
+<!-- <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=ZUONbpqGBsYGXNIYHicvbAbM"></script> -->
+<script src="./js/map.js"></script>
+
+<script type="text/javascript">
+	// 路径配置
+//	(function () {
+		require.config({
+			paths: {
+				echarts: 'doc/example/www/js'
+			},
+			packages: [
+				{
+					name: 'BMap',
+					location: 'js/src',
+					main: 'main'
+				}
+			]
+		});
+
+
+//	})();
+
+</script>
+
+<script type="text/javascript">
+
+	//每隔20分钟刷新一次页面 
+	setInterval(function(){
+		location.reload();
+	}, 1000*60*20);
+
+	//设置container高度
+	var wheight = $(window).height()-10;
+	$('.cnksi_index_left').height(wheight);
+	$(window).resize(function(){
+		wheight = $(window).height()-10;
+		$('.cnksi_index_left').height(wheight);
+	});
+
+    //修改登录地址，添加appid
+    $(".login >a").attr("href", function (i, href) {
+        console.debug(href);
+        var mapIndex = location.href.indexOf('/map/riskmap.html');
+        return location.href.substring(location.origin.length, mapIndex) + href;
+    });
+
+	//初始化地图
+//	var BMapExt = new BMapExtension($("#container")[0], BMap, require('echarts'), require('zrender'));
+//	var map = BMapExt.getMap();
+//	var container = BMapExt.getEchartsContainer();
+
+	require(
+			[
+				'echarts',
+				'BMap',
+				'echarts/chart/map'
+			],
+			function (echarts, BMapExtension) {
+				var BMapExt = new BMapExtension($('#container')[0], BMap, echarts,{
+					enableMapClick: false
+				});
+				map = BMapExt.getMap();
+				container = BMapExt.getEchartsContainer();
+
+//				var map = new BMap.Map("container");
+				var point = new BMap.Point(103.763986, 29.259711);
+				map.centerAndZoom(point, 10);
+
+				//map.addControl(new BMap.NavigationControl());  //添加默认缩放平移控件
+				map.enableScrollWheelZoom(false);
+				map.setMaxZoom(13); //默认最大缩放级别
+				// 地图自定义样式
+				map.setMapStyle({
+					styleJson: [
+						{
+							"featureType": "water",
+							"elementType": "all",
+							"stylers": {
+								"color": "#0B0C1A"
+							}
+						},
+						{
+							"featureType": "land",
+							"elementType": "all",
+							"stylers": {
+								"color": "#0B0C1A"
+							}
+						},
+						{
+							"featureType": "boundary",
+							"elementType": "geometry",
+							"stylers": {
+								"color": "#0B0C1A"
+							}
+						},
+						{
+							"featureType": "railway",
+							"elementType": "all",
+							"stylers": {
+								"visibility": "off"
+							}
+						},
+						{
+							"featureType": "highway",
+							"elementType": "geometry",
+							"stylers": {
+								"color": "#0B0C1A"
+							}
+						},
+						{
+							"featureType": "highway",
+							"elementType": "geometry.fill",
+							"stylers": {
+								"color": "#0B0C1A",
+								"lightness": 1
+							}
+						},
+						{
+							"featureType": "highway",
+							"elementType": "labels",
+							"stylers": {
+								"visibility": "off"
+							}
+						},
+						{
+							"featureType": "arterial",
+							"elementType": "geometry",
+							"stylers": {
+								"color": "#0B0C1A"
+							}
+						},
+						{
+							"featureType": "arterial",
+							"elementType": "geometry.fill",
+							"stylers": {
+								"color": "#0B0C1A"
+							}
+						},
+						{
+							"featureType": "poi",
+							"elementType": "all",
+							"stylers": {
+								"visibility": "off"
+							}
+						},
+						{
+							"featureType": "green",
+							"elementType": "all",
+							"stylers": {
+								"color": "#0B0C1A",
+								"visibility": "off"
+							}
+						},
+						{
+							"featureType": "subway",
+							"elementType": "all",
+							"stylers": {
+								"color": "red"
+							}
+						},
+						{
+							"featureType": "manmade",
+							"elementType": "all",
+							"stylers": {
+								"color": "red"
+							}
+						},
+						{
+							"featureType": "local",
+							"elementType": "all",
+							"stylers": {
+								"visibility": "off"
+							}
+						},
+						{
+							"featureType": "arterial",
+							"elementType": "labels",
+							"stylers": {
+								"visibility": "off"
+							}
+						},
+						{
+							"featureType": "boundary",
+							"elementType": "geometry.fill",
+							"stylers": {
+								"color": "#0B0C1A"
+							}
+						},
+						{
+							"featureType": "building",
+							"elementType": "all",
+							"stylers": {
+								"color": "#0B0C1A"
+							}
+						},
+						{
+							"featureType": "label",			//地图所有标记点
+							"elementType": "all",
+							"stylers": {
+								"visibility": "off"
+							}
+						}
+					]
+				});
+				//发光点
+				mygeo = {
+					"risk_1":[104.061792,29.699891],
+					"risk_2":[103.815728,29.688848],
+					"risk_3":[103.631755,29.787194],
+					"risk_4":[103.588062,29.401282],
+					"risk_5":[103.87207,29.403296],
+					"risk_6":[103.94106,29.184562],
+					"risk_7":[103.936461,28.998723],
+					"risk_8":[103.521372,28.76696],
+					"risk_9":[103.321301,29.089665],
+					"risk_10":[103.114331,29.382653],
+					"risk_11":[103.332224,29.439538],
+					};
+
+				markLineData = [		//连接
+				]
+
+				option = {
+
+					color: ['gold','aqua','lime'],
+
+					legend: {
+						orient: 'vertical',
+						x:'left',
+						data:['风险预警', '作业风险'],
+						selectedMode: 'single',
+						/*selected:{
+							'作业风险' : false
+						},*/
+						textStyle : {
+							color: '#fff'
+						}
+					},
+					toolbox: {
+						show : false,
+						orient : 'vertical',
+						x: 'right',
+						y: 'center',
+						feature : {
+							mark : {show: false},
+							dataView : {show: true, readOnly: false},
+							restore : {show: true},
+							saveAsImage : {show: true}
+						}
+					},
+					//值域
+					dataRange: {
+						show : false,
+						min : 0,
+						max : 100,
+						x: '70%',
+						y: '70%',
+						calculable : false,		//是否值域漫游，启用后无视splitNumber，线性渐变
+						color: ['#ff0000', '#f96a6a', '#ff9147','#ffc000','#019cdf'], 	//100-0
+						textStyle:{
+							color:'#fff'
+						}
+					},
+					series : [
+						{
+							name:'riskmap_leve02',
+							type:'map',
+							mapType: 'none',
+							data:[],
+							geoCoord: mygeo,
+							markPoint : {
+								symbol:'emptyCircle',
+								symbolSize : function (v){
+									return 10 + v/10
+								},
+								effect : {
+									show: true,
+									color: '#019cdf',
+									shadowBlur : 10
+								},
+								itemStyle:{
+									normal:{
+										label:{show: false}
+									}
+								},
+								data : [
+									{name:'risk_1',value:15},
+									{name:'risk_7',value:19},
+									{name:'risk_8',value:10}
+								]
+							}
+
+						},
+						{
+							name:'riskmap_leve24',
+							type:'map',
+							mapType: 'none',
+							data:[],
+							geoCoord: mygeo,
+							markPoint : {
+								symbol:'emptyCircle',
+								symbolSize : function (v){
+									return 5+ v/10
+								},
+								effect : {
+									show: true,
+									color: '#FFCB00',
+									shadowBlur : 10
+								},
+								itemStyle:{
+									normal:{
+										label:{show: false}
+									}
+								},
+								data : [
+									{name:'risk_2',value:25},
+									{name:'risk_3',value:20},
+									{name:'risk_6',value:32},
+									{name:'risk_10',value:36},
+								]
+							}
+
+						},
+						{
+							name:'riskmap_leve46',
+							type:'map',
+							mapType: 'none',
+							data:[],
+							geoCoord: mygeo,
+							markPoint : {
+								symbol:'emptyCircle',
+								symbolSize : function (v){
+									return 5+ v/10
+								},
+								effect : {
+									show: true,
+									color: '#ff9147',
+									shadowBlur : 10
+								},
+								itemStyle:{
+									normal:{
+										label:{show: false}
+									}
+								},
+								data : [
+									{name:'risk_4',value:48},
+									{name:'risk_11',value:55}
+								]
+							}
+
+						},
+						{
+							name:'riskmap_leve68',
+							type:'map',
+							mapType: 'none',
+							data:[],
+							geoCoord: mygeo,
+							markPoint : {
+								symbol:'emptyCircle',
+								symbolSize : function (v){
+									return 5+ v/10
+								},
+								effect : {
+									show: true,
+									color: '#f96a6a',
+									shadowBlur : 10
+								},
+								itemStyle:{
+									normal:{
+										label:{show: false}
+									}
+								},
+								data : [
+									{name:'risk_5',value:71},
+									{name:'risk_9',value:68}
+								]
+							}
+
+						}
+
+					]
+				};
+
+				var myChart = BMapExt.initECharts(container);
+				BMapExt.setOption(option);
+
+				var MapCountyColor = [
+					{range:"0", val:"#ebf7ba"},
+					{range:"1-2", val:"#bedc42"},
+					{range:"3", val:"#d8ee79"},
+					{range:"4", val:"#d0ea63"},
+					{range:"5", val:"#c7e44e"},
+					{range:"6", val:"#bedc42"},
+					{range:"7", val:"#b4d431"},
+					{range:"8-", val:"#acce20"}
+				];
+
+				/**
+				 * 功能说明：显示指定地图区域的边界</br>
+				 * 参数说明：</br>
+				 * map：BMap.Map的实例化对象</br>
+				 * area: 区域对象 {name:"",points:"",count:""}</br>
+				 */
+				function addBoundary(map, area){
+					var opts = {strokeWeight: 2,strokeColor:"#134d55",fillColor:"#121f32",fillOpacity: 0.8};
+					var pl = new BMap.Polygon(area.points,opts);
+//					mapBounds.push(pl);
+					map.addOverlay(pl);
+
+					//添加标注
+					var posArr = area.namePos.split(",");
+					var label = new BMap.Label(area.name,{position : new BMap.Point(posArr[0],posArr[1]),offset : new BMap.Size(0,0)})
+					label.setStyle({"background":"","border":"0", "color": "#9ce2db", "fontSize":"16px"});
+					map.addOverlay(label);
+//					mapBounds.push(label);
+//					mapBoundLabels.push(label);
+				}
+
+				function showAllBoundary(){
+					for (var a in MapArea) {
+						addBoundary(map, MapArea[a]);
+					}
+				}
+				showAllBoundary();
+
+				map.addEventListener("click", function(e){
+					console.debug(e.point.lng+","+e.point.lat);
+					console.debug(this.getZoom());
+				});
+
+				var markerPoints = [			//中心圆
+					[104.061792,29.699891,'circle_1'],
+					[103.815728,29.688848,'circle_2'],
+					[103.631755,29.787194,'circle_2'],
+					[103.385692,29.583369,'cloudy'],
+					[103.588062,29.401282,'circle_3'],
+					[103.87207,29.403296,'circle_4'],
+					[103.94106,29.184562,'circle_2'],
+					[103.936461,28.998723,'circle_1'],
+					[103.521372,28.76696,'circle_1'],
+					[103.321301,29.089665,'circle_4'],
+					[103.114331,29.382653,'circle_2'],
+					[103.332224,29.439538,'circle_3','air_1'],		//可交互
+
+				];
+
+				var iconSizeObj = {
+					circle_1:[16,16],
+					circle_2:[16,16],
+					circle_3:[16,16],
+					circle_4:[16,16],
+					cloudy:[60,50]
+				};
+				for (var obj in markerPoints) {
+					var point = markerPoints[obj];
+					var pointType = point[2];		//图标的类型
+					var pointAct = (point.length == 4 )? point[3]: 'none';	//是否有交互
+					var iconSize = iconSizeObj[pointType];
+					var iconObj = new BMap.Icon('image/'+'icon_'+pointType+'.png', new BMap.Size(iconSize[0], iconSize[1]));
+					var marker = new BMap.Marker(new BMap.Point(point[0], point[1]),{ icon: iconObj});
+
+					map.addOverlay(marker);
+
+
+					if("air_1" == pointAct){
+						marker.addEventListener("mouseover", function(e){
+							disX=e.screenX-15+0;
+							disY=e.screenY+50;
+							$('.cnksi_explain_category').css({'left':disX,'top':disY});
+							$('.cnksi_explain_category').show();
+
+						});
+					}
+					//点击关闭弹框
+					$(".cnksi_col_right .cnksi_explain_category .box_close").click(function(){
+							$(".cnksi_explain_category").hide();
+					})
+				}
+
+				$('.cnksi_index_right .rigth_list .list_detail ul>li').on('click',function(){		//点击右侧展示栏放大相应的位置
+					var selected=false;
+					var points=[];
+					var company_name= $(this).find('.company_name').text().substr(0, 2);		//右侧列表公司名
+
+					for(var item in MapArea){
+						var city_name= MapArea[item].name.substr(0, 2);						//地图中的区域名
+						if(city_name.indexOf(company_name) != -1){
+							var line_arr= MapArea[item].points.split(";");
+							for(var point in line_arr){
+								var point_pos= line_arr[point].split(",");
+								points.push({lng:point_pos[0].trim(),lat:point_pos[1].trim()});
+							}
+							map.setViewport(points);
+							selected=true
+						}
+					}
+					if(!selected){
+						alert("抱歉，未找到该区域")
+					}
+
+				})
+
+				
+
+
+			}
+	);
+
+
+
+
+	//显示所有区县边界 
+	function showAllBoundary(){
+		var jsonObj = '${json}';
+		var num  = 0 ;
+		for(var a in MapArea){
+			var area = MapArea[a];
+			var count = 0;
+			for(var d in jsonObj){
+				var obj = jsonObj[d];
+				//找到单位对应的区域
+				//if(!obj.area) obj.area = "市中区";
+				if(obj.area && obj.area.indexOf(area.name) != -1){
+					//计算单位下的计划数 
+					count += 1;
+				}
+			}
+			//TEST
+			count += num ++;
+			area.count = count;
+			addBoundary(map,area);
+		}
+		
+	}
+
+
+
+
+
+</script>
+
+</body>
+</html>
+
